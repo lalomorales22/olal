@@ -1,0 +1,44 @@
+[package]
+name = "olal-ingest"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "File ingestion and processing pipeline for Axiom"
+
+[dependencies]
+# Internal crates
+olal-core.workspace = true
+olal-db.workspace = true
+olal-config.workspace = true
+olal-process.workspace = true
+olal-ollama.workspace = true
+
+# Async runtime
+tokio.workspace = true
+
+# Serialization
+serde.workspace = true
+serde_json.workspace = true
+
+# Error handling
+thiserror.workspace = true
+anyhow.workspace = true
+
+# File system
+notify.workspace = true
+notify-debouncer-mini.workspace = true
+walkdir.workspace = true
+glob.workspace = true
+
+# Document processing
+pulldown-cmark.workspace = true
+pdf-extract = "0.7"
+
+# Utilities
+chrono.workspace = true
+sha2.workspace = true
+tracing.workspace = true
+shellexpand = "3"
+tempfile = "3"
+which = "6"

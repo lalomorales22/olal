@@ -1,0 +1,32 @@
+[package]
+name = "olal-process"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Media processing (transcription, OCR) for Axiom"
+
+[dependencies]
+# Internal crates
+olal-core.workspace = true
+
+# Async runtime
+tokio.workspace = true
+
+# Serialization
+serde.workspace = true
+serde_json.workspace = true
+
+# Error handling
+thiserror.workspace = true
+anyhow.workspace = true
+
+# Utilities
+chrono.workspace = true
+tracing.workspace = true
+
+# Process spawning for external tools
+which = "6"
+
+[dev-dependencies]
+tempfile = "3"

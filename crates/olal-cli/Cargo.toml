@@ -1,0 +1,31 @@
+[package]
+name = "olal-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "olal"
+path = "src/main.rs"
+
+[dependencies]
+olal-core = { workspace = true }
+olal-db = { workspace = true }
+olal-config = { workspace = true }
+olal-ingest = { workspace = true }
+olal-process = { workspace = true }
+olal-ollama = { workspace = true }
+clap = { workspace = true }
+colored = { workspace = true }
+indicatif = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+chrono = { workspace = true }
+serde_json = { workspace = true }
+walkdir = { workspace = true }
+shellexpand = "3"
+rustyline = "14"
+dirs = "6"
