@@ -20,6 +20,9 @@ olal ingest ./notes.md              # Documents, code, markdown
 olal ingest ./podcast.mp3           # Audio (transcribed via Whisper)
 olal ingest ~/Documents/Notes       # Entire directories
 
+# Generate embeddings for semantic search
+olal embed --all                    # Vectorizes documents ingested into db
+
 # Search & Ask
 olal search "rust error handling"   # Full-text search
 olal search --semantic "async patterns"  # Meaning-based search
